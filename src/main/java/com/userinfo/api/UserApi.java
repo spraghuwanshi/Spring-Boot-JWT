@@ -3,7 +3,8 @@ package com.userinfo.api;
 //import io.swagger.model.User;
 
 import io.swagger.annotations.*;
-import com.userinfo.model.User;
+import com.userinfo.service.dto.User;
+import com.userinfo.service.dto.UserByNameDTO;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -51,7 +52,7 @@ public interface UserApi {
         produces = { "application/json", "application/xml" }, 
         consumes = { "application/json" },
         method = RequestMethod.GET)
-    ResponseEntity<User> getUserByName(@ApiParam(value = "Unique identifier from the service consumer. E.g. Reference number while creating a userinf0/Address from UI can be passed through all APIs to provide visibility across calls." ,required=true ) @RequestHeader(value="callId", required=true) String callId,
+    ResponseEntity<UserByNameDTO> getUserByName(@ApiParam(value = "Unique identifier from the service consumer. E.g. Reference number while creating a userinf0/Address from UI can be passed through all APIs to provide visibility across calls." ,required=true ) @RequestHeader(value="callId", required=true) String callId,
         @ApiParam(value = "Name of the channel - B2B/CES" ,required=true ) @RequestHeader(value="channel", required=true) String channel,
         @ApiParam(value = "UserID (Principal)" ,required=true ) @RequestHeader(value="x-mytoll-identity", required=true) String xMytollIdentity,
         @ApiParam(value = "The name that needs to be fetched. Use user1 for testing.",required=true ) @PathVariable("username") String username);
