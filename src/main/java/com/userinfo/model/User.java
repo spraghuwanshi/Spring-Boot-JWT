@@ -9,7 +9,7 @@ import com.userinfo.model.AddressParty2;
 /**
  * User
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2017-08-03T09:31:20.972Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2017-08-08T07:00:35.342Z")
 
 public class User   {
   @JsonProperty("id")
