@@ -2,15 +2,15 @@ package com.userinfo.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
+import lombok.Data;
 
-/**
- * The persistent class for the users database table.
- * 
- */
+@Data
 @Entity
 @Table(name="users")
-@NamedQuery(name="User.findAll", query="SELECT u FROM User u")
+@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -20,32 +20,4 @@ public class User implements Serializable {
 	private byte enabled;
 
 	private String password;
-
-	public User() {
-	}
-
-	public String getUsername() {
-		return this.username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	public byte getEnabled() {
-		return this.enabled;
-	}
-
-	public void setEnabled(byte enabled) {
-		this.enabled = enabled;
-	}
-
-	public String getPassword() {
-		return this.password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
 }

@@ -2,17 +2,10 @@ package com.userinfo.service.dto;
 
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import org.joda.time.DateTime;
 
-/**
- * AddressParty1
- */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2017-08-08T07:00:35.342Z")
-
-public class AddressParty1   {
+public class AddressParty2DTO   {
   @JsonProperty("AddressId")
   private Integer addressId = null;
 
@@ -67,7 +60,7 @@ public class AddressParty1   {
   @JsonProperty("LastModifiedBy")
   private String lastModifiedBy = null;
 
-  public AddressParty1 addressId(Integer addressId) {
+  public AddressParty2DTO addressId(Integer addressId) {
     this.addressId = addressId;
     return this;
   }
@@ -85,7 +78,7 @@ public class AddressParty1   {
     this.addressId = addressId;
   }
 
-  public AddressParty1 companyName(String companyName) {
+  public AddressParty2DTO companyName(String companyName) {
     this.companyName = companyName;
     return this;
   }
@@ -103,7 +96,7 @@ public class AddressParty1   {
     this.companyName = companyName;
   }
 
-  public AddressParty1 partyName(String partyName) {
+  public AddressParty2DTO partyName(String partyName) {
     this.partyName = partyName;
     return this;
   }
@@ -121,7 +114,7 @@ public class AddressParty1   {
     this.partyName = partyName;
   }
 
-  public AddressParty1 workPhoneNumber(String workPhoneNumber) {
+  public AddressParty2DTO workPhoneNumber(String workPhoneNumber) {
     this.workPhoneNumber = workPhoneNumber;
     return this;
   }
@@ -139,7 +132,7 @@ public class AddressParty1   {
     this.workPhoneNumber = workPhoneNumber;
   }
 
-  public AddressParty1 mobileNumber(String mobileNumber) {
+  public AddressParty2DTO mobileNumber(String mobileNumber) {
     this.mobileNumber = mobileNumber;
     return this;
   }
@@ -157,7 +150,7 @@ public class AddressParty1   {
     this.mobileNumber = mobileNumber;
   }
 
-  public AddressParty1 email(String email) {
+  public AddressParty2DTO email(String email) {
     this.email = email;
     return this;
   }
@@ -175,7 +168,7 @@ public class AddressParty1   {
     this.email = email;
   }
 
-  public AddressParty1 postCode(String postCode) {
+  public AddressParty2DTO postCode(String postCode) {
     this.postCode = postCode;
     return this;
   }
@@ -193,7 +186,7 @@ public class AddressParty1   {
     this.postCode = postCode;
   }
 
-  public AddressParty1 state(String state) {
+  public AddressParty2DTO state(String state) {
     this.state = state;
     return this;
   }
@@ -211,7 +204,7 @@ public class AddressParty1   {
     this.state = state;
   }
 
-  public AddressParty1 countryCode(String countryCode) {
+  public AddressParty2DTO countryCode(String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -229,7 +222,7 @@ public class AddressParty1   {
     this.countryCode = countryCode;
   }
 
-  public AddressParty1 addressNote(String addressNote) {
+  public AddressParty2DTO addressNote(String addressNote) {
     this.addressNote = addressNote;
     return this;
   }
@@ -247,7 +240,7 @@ public class AddressParty1   {
     this.addressNote = addressNote;
   }
 
-  public AddressParty1 accountCode(String accountCode) {
+  public AddressParty2DTO accountCode(String accountCode) {
     this.accountCode = accountCode;
     return this;
   }
@@ -265,7 +258,7 @@ public class AddressParty1   {
     this.accountCode = accountCode;
   }
 
-  public AddressParty1 receiverAddressType(String receiverAddressType) {
+  public AddressParty2DTO receiverAddressType(String receiverAddressType) {
     this.receiverAddressType = receiverAddressType;
     return this;
   }
@@ -283,7 +276,7 @@ public class AddressParty1   {
     this.receiverAddressType = receiverAddressType;
   }
 
-  public AddressParty1 businesstaxNumber(String businesstaxNumber) {
+  public AddressParty2DTO businesstaxNumber(String businesstaxNumber) {
     this.businesstaxNumber = businesstaxNumber;
     return this;
   }
@@ -301,7 +294,7 @@ public class AddressParty1   {
     this.businesstaxNumber = businesstaxNumber;
   }
 
-  public AddressParty1 addressType(String addressType) {
+  public AddressParty2DTO addressType(String addressType) {
     this.addressType = addressType;
     return this;
   }
@@ -319,7 +312,7 @@ public class AddressParty1   {
     this.addressType = addressType;
   }
 
-  public AddressParty1 createdTs(DateTime createdTs) {
+  public AddressParty2DTO createdTs(DateTime createdTs) {
     this.createdTs = createdTs;
     return this;
   }
@@ -337,7 +330,7 @@ public class AddressParty1   {
     this.createdTs = createdTs;
   }
 
-  public AddressParty1 createdBy(String createdBy) {
+  public AddressParty2DTO createdBy(String createdBy) {
     this.createdBy = createdBy;
     return this;
   }
@@ -355,7 +348,7 @@ public class AddressParty1   {
     this.createdBy = createdBy;
   }
 
-  public AddressParty1 lastModifiedTs(DateTime lastModifiedTs) {
+  public AddressParty2DTO lastModifiedTs(DateTime lastModifiedTs) {
     this.lastModifiedTs = lastModifiedTs;
     return this;
   }
@@ -373,7 +366,7 @@ public class AddressParty1   {
     this.lastModifiedTs = lastModifiedTs;
   }
 
-  public AddressParty1 lastModifiedBy(String lastModifiedBy) {
+  public AddressParty2DTO lastModifiedBy(String lastModifiedBy) {
     this.lastModifiedBy = lastModifiedBy;
     return this;
   }
@@ -400,25 +393,25 @@ public class AddressParty1   {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    AddressParty1 addressParty1 = (AddressParty1) o;
-    return Objects.equals(this.addressId, addressParty1.addressId) &&
-        Objects.equals(this.companyName, addressParty1.companyName) &&
-        Objects.equals(this.partyName, addressParty1.partyName) &&
-        Objects.equals(this.workPhoneNumber, addressParty1.workPhoneNumber) &&
-        Objects.equals(this.mobileNumber, addressParty1.mobileNumber) &&
-        Objects.equals(this.email, addressParty1.email) &&
-        Objects.equals(this.postCode, addressParty1.postCode) &&
-        Objects.equals(this.state, addressParty1.state) &&
-        Objects.equals(this.countryCode, addressParty1.countryCode) &&
-        Objects.equals(this.addressNote, addressParty1.addressNote) &&
-        Objects.equals(this.accountCode, addressParty1.accountCode) &&
-        Objects.equals(this.receiverAddressType, addressParty1.receiverAddressType) &&
-        Objects.equals(this.businesstaxNumber, addressParty1.businesstaxNumber) &&
-        Objects.equals(this.addressType, addressParty1.addressType) &&
-        Objects.equals(this.createdTs, addressParty1.createdTs) &&
-        Objects.equals(this.createdBy, addressParty1.createdBy) &&
-        Objects.equals(this.lastModifiedTs, addressParty1.lastModifiedTs) &&
-        Objects.equals(this.lastModifiedBy, addressParty1.lastModifiedBy);
+    AddressParty2DTO addressParty2DTO = (AddressParty2DTO) o;
+    return Objects.equals(this.addressId, addressParty2DTO.addressId) &&
+        Objects.equals(this.companyName, addressParty2DTO.companyName) &&
+        Objects.equals(this.partyName, addressParty2DTO.partyName) &&
+        Objects.equals(this.workPhoneNumber, addressParty2DTO.workPhoneNumber) &&
+        Objects.equals(this.mobileNumber, addressParty2DTO.mobileNumber) &&
+        Objects.equals(this.email, addressParty2DTO.email) &&
+        Objects.equals(this.postCode, addressParty2DTO.postCode) &&
+        Objects.equals(this.state, addressParty2DTO.state) &&
+        Objects.equals(this.countryCode, addressParty2DTO.countryCode) &&
+        Objects.equals(this.addressNote, addressParty2DTO.addressNote) &&
+        Objects.equals(this.accountCode, addressParty2DTO.accountCode) &&
+        Objects.equals(this.receiverAddressType, addressParty2DTO.receiverAddressType) &&
+        Objects.equals(this.businesstaxNumber, addressParty2DTO.businesstaxNumber) &&
+        Objects.equals(this.addressType, addressParty2DTO.addressType) &&
+        Objects.equals(this.createdTs, addressParty2DTO.createdTs) &&
+        Objects.equals(this.createdBy, addressParty2DTO.createdBy) &&
+        Objects.equals(this.lastModifiedTs, addressParty2DTO.lastModifiedTs) &&
+        Objects.equals(this.lastModifiedBy, addressParty2DTO.lastModifiedBy);
   }
 
   @Override
@@ -429,7 +422,7 @@ public class AddressParty1   {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class AddressParty1 {\n");
+    sb.append("class AddressParty2 {\n");
     
     sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
     sb.append("    companyName: ").append(toIndentedString(companyName)).append("\n");

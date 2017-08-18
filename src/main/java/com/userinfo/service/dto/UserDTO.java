@@ -3,15 +3,11 @@ package com.userinfo.service.dto;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModelProperty;
-import com.userinfo.service.dto.AddressParty1;
-import com.userinfo.service.dto.AddressParty2;
+import com.userinfo.service.dto.AddressParty1DTO;
+import com.userinfo.service.dto.AddressParty2DTO;
 
-/**
- * User
- */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2017-08-08T07:00:35.342Z")
 
-public class User   {
+public class UserDTO   {
   @JsonProperty("id")
   private Long id = null;
 
@@ -34,15 +30,15 @@ public class User   {
   private String phone = null;
 
   @JsonProperty("AddressParty1")
-  private AddressParty1 addressParty1 = null;
+  private AddressParty1DTO addressParty1DTO = null;
 
   @JsonProperty("AddressParty2")
-  private AddressParty2 addressParty2 = null;
+  private AddressParty2DTO addressParty2DTO = null;
 
   @JsonProperty("userStatus")
   private Integer userStatus = null;
 
-  public User id(Long id) {
+  public UserDTO id(Long id) {
     this.id = id;
     return this;
   }
@@ -60,7 +56,7 @@ public class User   {
     this.id = id;
   }
 
-  public User username(String username) {
+  public UserDTO username(String username) {
     this.username = username;
     return this;
   }
@@ -78,7 +74,7 @@ public class User   {
     this.username = username;
   }
 
-  public User firstName(String firstName) {
+  public UserDTO firstName(String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -96,7 +92,7 @@ public class User   {
     this.firstName = firstName;
   }
 
-  public User lastName(String lastName) {
+  public UserDTO lastName(String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -114,7 +110,7 @@ public class User   {
     this.lastName = lastName;
   }
 
-  public User email(String email) {
+  public UserDTO email(String email) {
     this.email = email;
     return this;
   }
@@ -132,7 +128,7 @@ public class User   {
     this.email = email;
   }
 
-  public User password(String password) {
+  public UserDTO password(String password) {
     this.password = password;
     return this;
   }
@@ -150,7 +146,7 @@ public class User   {
     this.password = password;
   }
 
-  public User phone(String phone) {
+  public UserDTO phone(String phone) {
     this.phone = phone;
     return this;
   }
@@ -168,8 +164,8 @@ public class User   {
     this.phone = phone;
   }
 
-  public User addressParty1(AddressParty1 addressParty1) {
-    this.addressParty1 = addressParty1;
+  public UserDTO addressParty1DTO(AddressParty1DTO addressParty1DTO) {
+    this.addressParty1DTO = addressParty1DTO;
     return this;
   }
 
@@ -178,16 +174,16 @@ public class User   {
    * @return addressParty1
   **/
   @ApiModelProperty(value = "")
-  public AddressParty1 getAddressParty1() {
-    return addressParty1;
+  public AddressParty1DTO getAddressParty1() {
+    return addressParty1DTO;
   }
 
-  public void setAddressParty1(AddressParty1 addressParty1) {
-    this.addressParty1 = addressParty1;
+  public void setAddressParty1(AddressParty1DTO addressParty1DTO) {
+    this.addressParty1DTO = addressParty1DTO;
   }
 
-  public User addressParty2(AddressParty2 addressParty2) {
-    this.addressParty2 = addressParty2;
+  public UserDTO addressParty2DTO(AddressParty2DTO addressParty2DTO) {
+    this.addressParty2DTO = addressParty2DTO;
     return this;
   }
 
@@ -196,15 +192,15 @@ public class User   {
    * @return addressParty2
   **/
   @ApiModelProperty(value = "")
-  public AddressParty2 getAddressParty2() {
-    return addressParty2;
+  public AddressParty2DTO getAddressParty2() {
+    return addressParty2DTO;
   }
 
-  public void setAddressParty2(AddressParty2 addressParty2) {
-    this.addressParty2 = addressParty2;
+  public void setAddressParty2(AddressParty2DTO addressParty2DTO) {
+    this.addressParty2DTO = addressParty2DTO;
   }
 
-  public User userStatus(Integer userStatus) {
+  public UserDTO userStatus(Integer userStatus) {
     this.userStatus = userStatus;
     return this;
   }
@@ -231,22 +227,22 @@ public class User   {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    User user = (User) o;
-    return Objects.equals(this.id, user.id) &&
-        Objects.equals(this.username, user.username) &&
-        Objects.equals(this.firstName, user.firstName) &&
-        Objects.equals(this.lastName, user.lastName) &&
-        Objects.equals(this.email, user.email) &&
-        Objects.equals(this.password, user.password) &&
-        Objects.equals(this.phone, user.phone) &&
-        Objects.equals(this.addressParty1, user.addressParty1) &&
-        Objects.equals(this.addressParty2, user.addressParty2) &&
-        Objects.equals(this.userStatus, user.userStatus);
+    UserDTO userDTO = (UserDTO) o;
+    return Objects.equals(this.id, userDTO.id) &&
+        Objects.equals(this.username, userDTO.username) &&
+        Objects.equals(this.firstName, userDTO.firstName) &&
+        Objects.equals(this.lastName, userDTO.lastName) &&
+        Objects.equals(this.email, userDTO.email) &&
+        Objects.equals(this.password, userDTO.password) &&
+        Objects.equals(this.phone, userDTO.phone) &&
+        Objects.equals(this.addressParty1DTO, userDTO.addressParty1DTO) &&
+        Objects.equals(this.addressParty2DTO, userDTO.addressParty2DTO) &&
+        Objects.equals(this.userStatus, userDTO.userStatus);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, username, firstName, lastName, email, password, phone, addressParty1, addressParty2, userStatus);
+    return Objects.hash(id, username, firstName, lastName, email, password, phone, addressParty1DTO, addressParty2DTO, userStatus);
   }
 
   @Override
@@ -261,8 +257,8 @@ public class User   {
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
     sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
-    sb.append("    addressParty1: ").append(toIndentedString(addressParty1)).append("\n");
-    sb.append("    addressParty2: ").append(toIndentedString(addressParty2)).append("\n");
+    sb.append("    addressParty1: ").append(toIndentedString(addressParty1DTO)).append("\n");
+    sb.append("    addressParty2: ").append(toIndentedString(addressParty2DTO)).append("\n");
     sb.append("    userStatus: ").append(toIndentedString(userStatus)).append("\n");
     sb.append("}");
     return sb.toString();
